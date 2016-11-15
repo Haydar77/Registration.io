@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="Assignment4.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="Assignment4js.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<form id="myForm">
+<table width="70%" border="0" align="center" cellpadding="5" cellspacing="12">
+  <tbody>
+    <tr>
+      <td width="50%"><span class="astericks">*</span>First Name<br>
+        <input name="textfield" type="text" required id="fName" size="50" maxlength="15"></td>
+      <td width="50%"><span class="astericks">*</span>Last Name<br>
+        <input name="textfield" type="text" required id="lName" size="50" maxlength="15"></td>
+    </tr>
+    <tr>
+      <td>Gender<br>
+        <input type="radio" name="gender" id="male" value="radio">M   <input type="radio" name="gender" id="female" value="radio2">F</td>
+      <td><span class="astericks">*</span>Street Address<br>
+      	<input name="textfield" type="text" required id="streetAddr" size="50"></td>
+    </tr>
+    <tr>
+      <td><span class="astericks">*</span>Country<br>
+		<input name="textfield" type="text" required id="country" size="50"></td>
+      <td><span class="astericks">*</span>Postal Code <span style="font-size: 14px"><em>(e.g. "A9A 9A9" for Canada or "12345" for USA)</em></span><br>
+		<input type="text" required id="postCode1" size="1" maxlength="3">&nbsp;<input type="text" required id="postCode2" size="1" maxlength="3"></td>
+    </tr>
+    <tr>
+      <td><span class="astericks">*</span>Password<br>
+		<input name="textfield" type="text" required id="password1" size="50"></td>
+      <td><span class="astericks">*</span>Confirm Password<br>
+		<input name="textfield" type="text" required id="password2" size="50"></td>
+    </tr>
+    <tr>
+      <td><span class="astericks">*</span>City<br>
+		<input name="textfield" type="text" required id="city" size="50"></td>
+      <td><span class="astericks">*</span>State/Province <span style="font-size: 14px"><em>(e.g. ON, AB, WI)</em></span><br>
+		<input type="text" required size="1" maxlength="2"></td>
+    </tr>
+    <tr>
+      <td><span class="astericks">*</span>Email<br>
+        <input name="email" type="email" required id="email" size="50"></td>
+      <td><span class="astericks">*</span>Phone Number<br>
+		<input name="textfield" type="tel" required id="phone1" size="1" maxlength="3">&nbsp;-&nbsp;<input name="textfield" type="tel" required id="phone2" size="5" maxlength="7"></td>
+    </tr>
+    <tr>
+      <td>List of Previous Education<br>
+        <select name="select" required id="prevEdu">
+          <option value="hs">High School</option>
+            <option value="col">College</option>
+            <option value="uni">University</option>
+            <option value="other">Other</option>
+        </select></td>
+      <td><span class="astericks">*</span>Are you Currently Working?<br>
+		<input name="working" type="radio" required id="workingYes">Yes <input name="working" type="radio" required id="workingNo">No</td>
+    </tr>
+    <tr>
+      <td>Preferred Campus<br>
+		<select required id="prefCampus">
+		  <option value="ashtonbee">Ashtonbee</option>
+		  <option value="eglinton">Eglinton </option>
+		  <option value="morningside">Morningside</option>
+		  <option value="pickering">Pickering</option>
+		  <option value="progress">Progress</option>
+		  <option value="sacentre">Story Arts Centre</option>
+		  <option value="no">No Preference</option>
+        </select></td>
+      <td>Progam of Interest<br>
+		<input type="text" name="textfield" id="program" size="50"></td>
+    </tr>
+    <tr>
+      <td>How Did you Hear About Us?<br>
+		<select>
+		  <option value="1">Career Fair</option>
+		  <option value="2">Friends/Family/Coworker</option>
+		  <option value="3">Website</option>
+		  <option value="4">Commercial</option>
+		  <option value="5">Other</option>
+        </select></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><span class="astericks">*</span> = Required Fields<br>
+		<input type="submit" id="submit" value="Apply" onclick="ValidateAllForms()"></td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</form>
+</div>
+</body>
+</html>
